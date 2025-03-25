@@ -27,9 +27,14 @@
               }
             ],
             "styles": [
+              "C:/Users/DANTE/OneDrive/Desktop/prueba/popsy/node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "C:/Users/DANTE/OneDrive/Desktop/prueba/popsy/node_modules/jquery/dist/jquery.min.js",
+              "C:/Users/DANTE/OneDrive/Desktop/prueba/popsy/node_modules/@popperjs/core/dist/umd/popper.min.js",
+              "C:/Users/DANTE/OneDrive/Desktop/prueba/popsy/node_modules/bootstrap/dist/js/bootstrap.min.js"
+            ]
           },
           "configurations": {
             "production": {

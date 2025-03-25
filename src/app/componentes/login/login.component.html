@@ -1,0 +1,43 @@
+<section class="col-12 bg-primary d-flex flex-column justify-content-center align-items-center" id="primario">
+    <div class="bg-info col-12 col-md-8 d-flex flex-column justify-content-center align-items-center" id="contenedor">
+        <div class="text-center">
+            <h4 class="text-light">Bienvenido a tu sitio web</h4>
+            <form class="mt-1 d-flex flex-column justify-content-center align-items-center rounded" [formGroup]="dinamicForm" (ngSubmit)="this.enviar()">
+                <div>
+                    <img class="img-fluid col-8 mb-2" src="assets/icono_popsy.png" alt="">
+                </div>
+                <div>
+                    <input class="form-control mb-3" type="email" name="" id="" required formControlName="username">
+                    <div>
+                        <div>
+                            @if(usernameValidation){
+                                <div>
+                                    <small class="text-warning col-10">El campo es requerido</small>
+                                </div>
+                                <div>
+                                    <small class="text-warning col-10">El   username debe ser un correo</small>
+                                </div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <input class="form-control mb-3" type="password" name="" id="" required formControlName="password">
+                    <div>
+                        @if(passwordValidation){
+                            <div>
+                                <small class="text-warning col-10">El campo es requerido</small>
+                            </div>
+                            <div>
+                                <small class="text-warning col-10">debe tener máximo 15 letras</small>
+                            </div>
+                        }
+                    </div>
+                </div>
+                <div class="text-center">
+                    <input class="btn btn-primary" type="submit" value="Login">
+                </div>
+            </form>
+        </div>
+    </div>
+</section>
